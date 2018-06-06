@@ -11,6 +11,12 @@ class KeyOpenDoor
     protected $key;
     protected $door;
 
+    public function __construct($key, $door)
+    {
+        $this->key = $key;
+        $this->door = $door;
+    }
+
     /**
      * @param mixed $key
      */
