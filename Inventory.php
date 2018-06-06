@@ -15,12 +15,19 @@
 </head>
 <body>
 <header><h1>Inventaire</h1></header>
-<nav class="panel panel-default">
-    <div class="panel-header"><h4>Menu</h4></div>
-    <div class="panel-body"><a href="#">Accueil</a></div>
-    <div class="panel-body"><a href="#">Inventaire</a></div>
-    <div class="panel-body"><a href="#">Ressource</a></div>
-    <div class="panel-body"><a href="#">Gestion</a></div>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">EnssatKey</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Accueil</a></li>
+            <li class="active"><a href="#">Inventaire</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Gestion</a></li>
+        </ul>
+    </div>
 </nav>
 </body>
 </html>
