@@ -6,6 +6,7 @@ class KeyVO
 
     protected $id;
     protected $type; //Clef ou Passe Partiel ou Passe Total
+    protected $keychain;
 
     public function __construct($type)
     {
@@ -32,6 +33,23 @@ class KeyVO
 
     public function getType() {
         return $this->type;
+    }
+
+    /**
+     * @param mixed $keychain
+     */
+    public function setKeychain($keychain)
+    {
+        $this->keychain = $keychain;
+    }
+
+    //Jeffrey Bataille
+    /**
+     * @return mixed
+     */
+    public function getKeychain()
+    {
+        return $this->keychain;
     }
 
 }
