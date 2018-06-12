@@ -6,7 +6,7 @@
  * Time: 16:48
  */
 
-interface interfaceSalleDAO
+interface interfaceRoomDAO
 {
     public static function getInstance();
 
