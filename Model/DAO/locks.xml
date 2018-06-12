@@ -1,0 +1,17 @@
+<!-- Aurélien Baronnet -->
+
+<?xml version='1.0' standalone='yes'?>
+<locks>
+  <lock>
+    <id>1</id>>
+    <length>5</length>
+  </lock>
+  <lock>
+    <id>2</id>
+    <length>7</length>
+  </lock>
+  <lock>
+    <id>3</id>
+    <length>10</length>
+  </lock>
+</locks>
