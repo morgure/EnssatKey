@@ -56,9 +56,9 @@ class implementationLockDAO_Dummy implements interfaceLockDAO
         return self::$_instance;
     }
 
-    public function getRooms()
+    public function getLocks()
     {
-        return $this->_rooms;
+        return $this->_locks;
         /*
         foreach($this->_keys as $clef=>$key)
         {
