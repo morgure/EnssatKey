@@ -21,9 +21,7 @@ class implementationRoomDAO_Dummy implements intefaceRoomDAO
             {
                 $key = new RoomVO();
                 $key->setId((int) $xmlroom->id);
-                $key->se((String)$xmlroom->type);
-                $key->setKeychain((int)$xmlroom->keychain);
-                $key->setProvider((String)$xmlroom->provider);
+                $key->setNom((String)$xmlroom->name_room);
 
 
                 array_push($this->_keys,$key);
