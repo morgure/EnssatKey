@@ -5,9 +5,9 @@ class KeyVO
     protected $id;
     protected $type; //Clef ou Passe Partiel ou Passe Total
     protected $keychain;
-    public function __construct($type)
+    protected $provider;
+    public function __construct()
     {
-      $this->type=$type;
     }
     public function setId($id) {
         $this->id = $id;
@@ -24,6 +24,38 @@ class KeyVO
         throw new RuntimeException('Le type de clef <strong>' . $type . '</strong> n\'existe pas !');
       }
     }
+    /**
+     * @param mixed $provider
+     */
+    public function setProvider($provider)
+    {
+        $this->provider = $provider;
+    }
+    /**
+     * @param array $keyType
+     */
+    public static function setKeyType($keyType)
+    {
+        self::$keyType = $keyType;
+    }
+
+
+    /**
+     * @return array
+     */
+    public static function getKeyType()
+    {
+        return self::$keyType;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProvider()
+    {
+        return $this->provider;
+    }
+
     public function getType() {
         return $this->type;
     }
