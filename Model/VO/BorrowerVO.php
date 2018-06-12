@@ -35,6 +35,7 @@ class BorrowerVO
     {
         return $this->keychain;
     }
+
     /**
      * @return mixed
      */
