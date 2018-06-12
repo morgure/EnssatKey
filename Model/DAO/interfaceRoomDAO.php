@@ -10,6 +10,6 @@ interface interfaceRoomDAO
 {
     public static function getInstance();
 
-    public function getSalle();
+    public function getRoom();
 
 }
