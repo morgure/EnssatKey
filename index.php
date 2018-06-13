@@ -23,9 +23,9 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Accueil</a></li>
-            <li><a href="Inventory.php">Inventaire</a></li>
-            <li><a href="Ressources.php">Inventaire</a></li>
-            <li><a href="Gestion.php">Inventaire</a></li>
+            <li><a href="View/Inventory.php">Inventaire</a></li>
+            <li><a href="View/Ressources.php">Inventaire</a></li>
+            <li><a href="../Gestion.php">Inventaire</a></li>
 
         </ul>
     </div>

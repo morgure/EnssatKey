@@ -22,7 +22,7 @@
             <a class="navbar-brand" href="#">EnssatKey</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="index.php">Accueil</a></li>
+            <li><a href="../index.php">Accueil</a></li>
             <li class="active"><a href="Inventory.php">Inventaire</a></li>
             <li><a href="Ressources.php">Ressources</a></li>
             <li><a href="#">Gestion</a></li>
