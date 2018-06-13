@@ -24,8 +24,8 @@
         </div>
         <ul class="nav navbar-nav">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active"><a href="Inventory.php">Inventaire</a></li>
-            <li><a href="Ressources.php">Ressources</a></li>
+            <li><a href="Inventory.php">Inventaire</a></li>
+            <li class="active"><a href="Ressources.php">Ressources</a></li>
             <li><a href="Gestion.php">Gestion</a></li>
         </ul>
     </div>
