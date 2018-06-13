@@ -28,7 +28,7 @@ class implementationKeychainDAO_Dummy implements interfaceKeyChainDAO
        {
          $keychain = new KeychainVO;
 
-         $keychain->setId((float) $xmlKeychain->id);
+         $keychain->setId((int) $xmlKeychain->id);
 
          array_push($this->_keychains,$keychain);
        }

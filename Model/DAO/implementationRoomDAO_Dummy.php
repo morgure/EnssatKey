@@ -24,7 +24,7 @@ class implementationRoomDAO_Dummy implements intefaceRoomDAO
                 $key->setNom((String)$xmlroom->name_room);
 
 
-                array_push($this->_keys,$key);
+                array_push($this->_rooms,$key);
             }
         } else {
             throw new RuntimeException('Echec lors de l\'ouverture du fichier keys.xml.');
