@@ -10,7 +10,8 @@
 <html>
 <head>
     <title>Inventory</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 <body>
@@ -23,82 +24,141 @@
         </div>
         <ul class="nav navbar-nav">
             <li><a href="index.php">Accueil</a></li>
-            <li class="active"><a href="Inventory.php">Inventaire</a></li>
+            <li><a href="Inventory.php">Inventaire</a></li>
             <li><a href="Ressources.php">Ressources</a></li>
-            <li><a href="Gestion.php">Gestion</a></li>
+            <li class="active"><a href="Gestion.php">Gestion</a></li>
         </ul>
     </div>
 </nav>
 
 <div class="container">
-    <h2>En circulation</h2>
-    <p>Cles en circulation</p>
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>date</th>
-            <th>proprietaire</th>
-            <th>type d'acces</th>
-            <th>Type de clé </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>45684</td>
-            <td>12/02/2002</td>
-            <td>john</td>
-            <td>acces enseignant</td>
-            <td>passe presque partout</td>
-        </tr>
-        <tr>
-            <td>12548</td>
-            <td>25/12/2015</td>
-            <td>David</td>
-            <td>acces etudiant</td>
-            <td>clef unique</td>
-        </tr>
-        <tr>
-            <td>98547</td>
-            <td>13/01/1985</td>
-            <td>Christophe</td>
-            <td>acces illimté</td>
-            <td>passe partout</td>
-        </tr>
-        </tbody>
-    </table>
-
-    <div class="MenuInventaire">
-        <label for="date">Date prolongement</label>
-        <input type="date" class="form-control" id="usr">
-        <button type="button" class="btn btn-default">prolonger</button>
-
-        <button type="button" class="btn btn-default">Dupliquer trousseau</button>
+    <div class="col-lg-6">
+    <div class="Emprunt">
+        <h2>Emprunt</h2>
+        <div class="formEmprunt">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Name" placeholder="Nom">
+            <label for="Type">Type de clé</label>
+            <select class="form-control" id="KeyType">
+                <option>passe partout</option>
+                <option>accès restreint</option>
+                <option>Acces visiteur</option>
+                <option>Acces etudiant</option>
+                <option>Acces professeur / chercheur</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </div>
     </div>
 
-    <h2>Trousseau</h2>
+    <div class="Retour">
+        <h2>Retour</h2>
+        <div class="formRetour">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Name" placeholder="Nom">
+            <label for="IdClef">IDClef</label>
+            <input type="text" class="form-control" id="IDClef" placeholder="ID clef">
+            <label for="Type">Type de clé</label>
+            <select class="form-control" id="KeyType">
+                <option>passe partout</option>
+                <option>accès restreint</option>
+                <option>Acces visiteur</option>
+                <option>Acces etudiant</option>
+                <option>Acces professeur / chercheur</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </div>
+    </div>
 
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nb clefs</th>
-            <th>IDclefs</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>T1</td>
-            <td>7</td>
-            <td>1/2/3/4/5/6/7</td>
-        </tr>
-        <tr>
-            <td>T2</td>
-            <td>4</td>
-            <td>8/9/10</td>
-        </tr>
-        </tbody>
-    </table>
+    <div class="Perte">
+        <h2>Perte</h2>
+        <div class="formPerte">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Name" placeholder="Nom">
+            <label for="IdClef">IDClef</label>
+            <input type="text" class="form-control" id="IDClef" placeholder="ID clef">
+            <label for="Type">Type de clé</label>
+            <select class="form-control" id="KeyType">
+                <option>passe partout</option>
+                <option>accès restreint</option>
+                <option>Acces visiteur</option>
+                <option>Acces etudiant</option>
+                <option>Acces professeur / chercheur</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </div>
+    </div>
+
+
+    <div class="Pret">
+        <h2>Pret</h2>
+        <div class="formPret">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Name" placeholder="Nom">
+            <label for="Type">Type de clé</label>
+            <select class="form-control" id="KeyType">
+                <option>passe partout</option>
+                <option>accès restreint</option>
+                <option>Acces visiteur</option>
+                <option>Acces etudiant</option>
+                <option>Acces professeur / chercheur</option>
+            </select>
+            <label for="IdClef">IDClef</label>
+            <input type="text" class="form-control" id="IDClef" placeholder="ID clef">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Name" placeholder="Nom">
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="col-lg-6">
+
+    <div class="Transfert">
+        <h2>Transfert</h2>
+        <div class="formTransfert">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Name" placeholder="Nom">
+            <label for="Type">Type de clé</label>
+            <select class="form-control" id="KeyType">
+                <option>passe partout</option>
+                <option>accès restreint</option>
+                <option>Acces visiteur</option>
+                <option>Acces etudiant</option>
+                <option>Acces professeur / chercheur</option>
+            </select>
+            <label for="IdClef">IDClef</label>
+            <input type="text" class="form-control" id="IDClef" placeholder="ID clef">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Name" placeholder="Nom">
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </div>
+    </div>
+
+
+    <div class="Relance">
+        <h2>Relance</h2>
+        <div class="formRelance">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Name" placeholder="Nom">
+            <label for="Type">Type de clé</label>
+            <select class="form-control" id="KeyType">
+                <option>passe partout</option>
+                <option>accès restreint</option>
+                <option>Acces visiteur</option>
+                <option>Acces etudiant</option>
+                <option>Acces professeur / chercheur</option>
+            </select>
+            <label for="Nom">Mail</label>
+            <input type="email" class="form-control" id="mail" placeholder="adresse mail">
+            <button type="submit" class="btn btn-primary">Valider</button>
+        </div>
+    </div>
+    </div>
+
+
+
+
 </div>
 </body>
 </html>

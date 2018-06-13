@@ -31,6 +31,8 @@
 </nav>
 
 <div class="container">
+
+    <div class="col-lg-10">
         <h2>En circulation</h2>
         <p>Cles en circulation</p>
         <table class="table table-hover">
@@ -67,15 +69,19 @@
             </tr>
             </tbody>
         </table>
+    </div>
 
+    <div class="col-lg-2">
     <div class="MenuInventaire">
+        <h2>Prolonger</h2>
         <label for="date">Date prolongement</label>
         <input type="date" class="form-control" id="usr">
         <button type="button" class="btn btn-default">prolonger</button>
-
-        <button type="button" class="btn btn-default">Dupliquer trousseau</button>
+        <button type="button" class="btn btn-default">Prolonger</button>
+    </div>
     </div>
 
+    <div class="col-lg-10">
 <h2>Trousseau</h2>
 
     <table class="table table-hover">
@@ -99,6 +105,15 @@
         </tr>
         </tbody>
     </table>
+    </div>
+
+    <div class="col-lg-2">
+
+            <h2>Dupliquer</h2>
+            <label for="date">Nombre de fois a dupliquer</label>
+            <input type="number" class="form-control" id="nb">
+            <button type="button" class="btn btn-default">Dupliquer trousseau</button>
+    </div>
     </div>
 </body>
 </html>
