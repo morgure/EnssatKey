@@ -1,22 +1,15 @@
 <?php
 class UserVO
 {
-    protected $id;
-    protected $username;
-    protected $name;
-    protected $surname;
-    protected $phone;
-    protected $office;
-    protected $email;
+
     protected $ur1identifier; //code apogee ou harpege, selon statu
-    protected $status; //Etudiant, Exterieur, personel
-    
     public function setUr1Identifier($id) {
         $this->ur1identifier = $id;
     }
     public function getUr1Identifier() {
         return $this->ur1identifier;
     }
+
 
     protected $enssatPrimaryKey; //32 bits
     public function setEnssatPrimaryKey($id) {
@@ -26,6 +19,7 @@ class UserVO
         return $this->enssatPrimaryKey;
     }
 
+    protected $username;
     public function setUsername($username) {
         $this->username = $username;
     }
@@ -33,6 +27,7 @@ class UserVO
         return $this->username;
     }
 
+    protected $name;
     public function setName($name) {
         $this->name = $name;
     }
@@ -40,6 +35,7 @@ class UserVO
         return $this->name;
     }
 
+    protected $surname;
     public function setSurname($surname) {
         $this->surname = $surname;
     }
@@ -47,6 +43,7 @@ class UserVO
         return $this->surname;
     }
 
+    protected $phone;
     public function setPhone($phone) {
         $this->phone = $phone;
     }
@@ -54,6 +51,7 @@ class UserVO
         return $this->phone;
     }
 
+    protected $status; //Etudiant, Exterieur, personel
     public function setStatus($status) {
         $this->status = $status;
     }
@@ -61,6 +59,7 @@ class UserVO
         return $this->status;
     }
 
+    protected $email;
     public function setEmail($email) {
         $this->email = $email;
     }

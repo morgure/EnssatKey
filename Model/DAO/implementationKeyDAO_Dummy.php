@@ -28,11 +28,14 @@ class implementationKeyDAO_Dummy implements interfaceKeyDAO
        foreach($keys->children() as $xmlkey)
        {
          $key = new keyVO;
-         $key->setId((int) $xmlkey->id);
-         $key->setType((String)$xmlkey->type);
-         $key->setKeychain((int)$xmlkey->keychain);
-         $key->setProvider((String)$xmlkey->provider);
-
+         $key->setEnssatPrimaryKey((float) $xmlkey->enssatPrimaryKey);
+         $key->setUr1Identifier((int)$xmlkey->ur1identifier);
+         $key->setkeyname((string)$xmlkey->keyname);
+         $key->setName((string)$xmlkey->name);
+         $key->setSurname((string)$xmlkey->surname);
+         $key->setPhone((int)$xmlkey->phone);
+         $key->setStatus((string)$xmlkey->status);
+         $key->setEmail((string)$xmlkey->email);
 
          array_push($this->_keys,$key);
        }

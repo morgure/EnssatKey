@@ -5,15 +5,18 @@
  * Date: 06/06/18
  * Time: 11:34
  */
+
 class KeyOpenDoor
 {
     protected $key;
     protected $door;
+
     public function __construct($key, $door)
     {
         $this->key = $key;
         $this->door = $door;
     }
+
     /**
      * @param mixed $key
      */
@@ -21,6 +24,7 @@ class KeyOpenDoor
     {
         $this->key = $key;
     }
+
     /**
      * @param mixed $door
      */
@@ -28,6 +32,7 @@ class KeyOpenDoor
     {
         $this->door = $door;
     }
+
     /**
      * @return mixed
      */
@@ -35,6 +40,7 @@ class KeyOpenDoor
     {
         return $this->key;
     }
+
     /**
      * @return mixed
      */
