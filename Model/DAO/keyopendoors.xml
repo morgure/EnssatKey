@@ -1,0 +1,25 @@
+<!-- Aurélien Baronnet -->
+
+<?xml version='1.0' standalone='yes'?>
+<keyopendoors>
+  <keyopendoor>
+    <key>1</key>
+    <door>1</door>
+  </keyopendoor>
+  <keyopendoor>
+    <key>2</key>
+    <door>2</door>
+  </keyopendoor>
+  <keyopendoor>
+    <key>3</key>
+    <door>1</door>
+  </keyopendoor>
+  <keyopendoor>
+    <key>3</key>
+    <door>3</door>
+  </keyopendoor>
+  <keyopendoor>
+    <key>3</key>
+    <door>4</door>
+  </keyopendoor>
+</keyopendoors>
