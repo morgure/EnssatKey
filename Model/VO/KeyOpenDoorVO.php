@@ -1,10 +1,14 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: Jeffrey Bataille
+ * Date: 06/06/18
+ * Time: 11:34
+ */
 class KeyOpenDoor
 {
     protected $key;
     protected $door;
-
     public function __construct($key, $door)
     {
         $this->key = $key;

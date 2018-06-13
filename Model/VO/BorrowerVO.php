@@ -10,6 +10,7 @@ class BorrowerVO
 {
     protected $user;
     protected $keychain;
+    protected $date;
 
 
     public function __construct($user, $keychain)
