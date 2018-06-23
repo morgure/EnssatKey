@@ -17,12 +17,13 @@ class KeyVO
     }
     public function setType($type) {
       if(array_key_exists($type,$this->keyType)){
-        $this->type = $type;
+        //$this->type = $type;
       }
       else
       {
-        throw new RuntimeException('Le type de clef <strong>' . $type . '</strong> n\'existe pas !');
+        //throw new RuntimeException('Le type de clef <strong>' . $type . '</strong> n\'existe pas !');
       }
+        $this->type = $type;
     }
     /**
      * @param mixed $provider
