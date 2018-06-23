@@ -8,52 +8,114 @@
 
 class LoanVO
 {
-    protected $id_borrower;
+    protected $state;
+    protected $keychain;
+    protected $user;
     protected $loan_date;
-    protected $return_date;
-    protected $id_keychain_borrow;
+    protected $return_loan;
 
-    public function __construct($borrow, $loan,$return,$keychain)
+    public function __construct($state, $loan_date,$user,$keychain, $return_date)
     {
-        $this->id_borrower=$borrow;
-        $this->loan_date=$loan;
-        $this->return_date=$return;
-        $this->id_keychain_borrow=$keychain;
+        $this->state=$state;
+        $this->loan_date = $loan_date;
+        $this->user=$user;
+        $this->return_date=$return_date;
     }
 
-    public function setIdBorrower($id_borrower) {
-        $this->id_borrower = $id_borrower;
-    }
-
-    public function getIdBorrower() {
-        return $this->id_borrower;
-    }
-
-    public function setLoanDate($loan_date)
+    /**
+     * @return mixed
+     */
+    public function getKeychain()
     {
-        $this->loan_date=$loan_date;
+        return $this->keychain;
     }
 
+    /**
+     * @return mixed
+     */
     public function getLoanDate()
     {
         return $this->loan_date;
     }
 
-    public function setReturnDate($return_date)
-    {
-        $this->return_date=$return_date;
-    }
+    /**
+     * @return mixed
+     */
     public function getReturnDate()
     {
         return $this->return_date;
     }
 
-    public function setKeychainID($id_keychain_borrow) {
-        $this->id_keychain_borrow = $id_keychain_borrow;
+    /**
+     * @return mixed
+     */
+    public function getReturnLoan()
+    {
+        return $this->return_loan;
     }
 
-    public function getKeyChainID() {
-        return $this->id_keychain_borrow;
+    /**
+     * @return mixed
+     */
+    public function getState()
+    {
+        return $this->state;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $keychain
+     */
+    public function setKeychain($keychain)
+    {
+        $this->keychain = $keychain;
+    }
+
+    /**
+     * @param mixed $loan_date
+     */
+    public function setLoanDate($loan_date)
+    {
+        $this->loan_date = $loan_date;
+    }
+
+    /**
+     * @param mixed $return_date
+     */
+    public function setReturnDate($return_date)
+    {
+        $this->return_date = $return_date;
+    }
+
+    /**
+     * @param mixed $return_loan
+     */
+    public function setReturnLoan($return_loan)
+    {
+        $this->return_loan = $return_loan;
+    }
+
+    /**
+     * @param mixed $state
+     */
+    public function setState($state)
+    {
+        $this->state = $state;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
     }
 }
 
