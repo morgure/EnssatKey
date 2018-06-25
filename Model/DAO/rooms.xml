@@ -1,0 +1,23 @@
+<?xml version='1.0' standalone='yes'?>
+<rooms>
+  <room>
+    <id>1</id>
+    <name_room>101D</name_room>
+  </room>
+  <room>
+    <id>2</id>
+    <name_room>005V</name_room>
+  </room>
+  <room>
+    <id>3</id>
+    <name_room>152N</name_room>
+  </room>
+  <room>
+    <id>4</id>
+    <name_room>102H</name_room>
+  </room>
+  <room>
+    <id>5</id>
+    <name_room>cafeteria</name_room>
+  </room>
+</rooms>
