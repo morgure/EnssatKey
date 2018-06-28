@@ -1,41 +1,39 @@
-Author = Guillaume ERHEL
-
-        <?xml version='1.0' standalone='yes'?>
+<?xml version='1.0' standalone='yes'?>
 <keys>
     <key>
         <id>1</id>
         <type>Simple</type>
-        <keychain>1</keychain>
+        <nombre_exemplaire>4</nombre_exemplaire>
         <provider>1</provider>
     </key>
     <key>
         <id>2</id>
         <type>Simple</type>
-        <keychain>3</keychain>
+        <nombre_exemplaire>4</nombre_exemplaire>
         <provider>2</provider>
     </key>
     <key>
         <id>3</id>
         <type>Partiel</type>
-        <keychain>7</keychain>
+        <nombre_exemplaire>4</nombre_exemplaire>
         <provider>2</provider>
     </key>
     <key>
         <id>4</id>
         <type>Total</type>
-        <keychain>1</keychain>
+        <nombre_exemplaire>4</nombre_exemplaire>
         <provider>3</provider>
     </key>
     <key>
         <id>5</id>
         <type>Simple</type>
-        <keychain>5</keychain>
+        <nombre_exemplaire>4</nombre_exemplaire>
         <provider>2</provider>
     </key>
     <key>
         <id>6</id>
         <type>Partiel</type>
-        <keychain></keychain>
+        <nombre_exemplaire>4</nombre_exemplaire>
         <provider>1</provider>
     </key>
 </keys>

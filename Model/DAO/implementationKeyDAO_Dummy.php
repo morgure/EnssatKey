@@ -1,6 +1,6 @@
 <?php
-require_once 'Model/VO/KeyVO.php';
-require_once 'Model/DAO/interfaceKeyDAO.php';
+require_once "../VO/KeyVO.php";
+require_once 'interfaceKeyDAO.php';
 
 
 class implementationKeyDAO_Dummy implements interfaceKeyDAO
@@ -28,14 +28,11 @@ class implementationKeyDAO_Dummy implements interfaceKeyDAO
        foreach($keys->children() as $xmlkey)
        {
          $key = new keyVO;
-         $key->setEnssatPrimaryKey((float) $xmlkey->enssatPrimaryKey);
-         $key->setUr1Identifier((int)$xmlkey->ur1identifier);
-         $key->setkeyname((string)$xmlkey->keyname);
-         $key->setName((string)$xmlkey->name);
-         $key->setSurname((string)$xmlkey->surname);
-         $key->setPhone((int)$xmlkey->phone);
-         $key->setStatus((string)$xmlkey->status);
-         $key->setEmail((string)$xmlkey->email);
+         $key->setId((int) $xmlkey->id);
+         $key->setType((String)$xmlkey->type);
+         $key->setNombre_exemplaire((int)$xmlkey->nombre_exemplaire);
+         $key->setProvider((String)$xmlkey->provider);
+
 
          array_push($this->_keys,$key);
        }

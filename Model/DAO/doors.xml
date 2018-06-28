@@ -1,6 +1,4 @@
-Author = Guillaume ERHEL
-
-        <?xml version='1.0' standalone='yes'?>
+<?xml version='1.0' standalone='yes'?>
 <doors>
     <door>
         <id>1</id>

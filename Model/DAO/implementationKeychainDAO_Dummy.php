@@ -28,12 +28,7 @@ class implementationKeychainDAO_Dummy implements interfaceKeyChainDAO
        {
          $keychain = new KeychainVO;
 
-         $keychain->setId((float) $xmlKeychain->id);
-         $tDate = new DateTime;
-         $tDate->setTimestamp((int)$xmlKeychain->creationDate);
-         $keychain->setCreationDate($tDate);
-         $tDate->setTimestamp((int)$xmlKeychain->destructionDate);
-         $keychain->setDestructionDate($tDate);
+         $keychain->setId((int) $xmlKeychain->id);
 
          array_push($this->_keychains,$keychain);
        }

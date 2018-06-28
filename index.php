@@ -24,8 +24,9 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Accueil</a></li>
             <li><a href="Inventory.php">Inventaire</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
+            <li><a href="Ressources.php">Inventaire</a></li>
+            <li><a href="../Gestion.php">Inventaire</a></li>
+
         </ul>
     </div>
 </nav>
